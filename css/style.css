@@ -1,0 +1,66 @@
+@import url("http://fonts.cdnfonts.com/css/digital-7-mono");
+
+body {
+  text-align: center;
+  font-family: "Digital-7 Mono", sans-serif;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.582);
+}
+
+#connect4 {
+  display: inline-block;
+}
+.col {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background-image: url("../assets/border.png");
+  background-size: cover;
+  border-radius: 50px;
+  margin: 5px;
+}
+#background-video {
+  filter: brightness(0.5);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+button {
+  font-family: "Digital-7 Mono";
+  padding: 0;
+  border: none;
+  background: none;
+  color: #ffffff8c;
+  font-size: 24px;
+}
+.col.empty {
+  cursor: crosshair;
+}
+
+.next-red {
+  background-image: url("../assets/redshadow.png");
+  background-size: 75px;
+}
+.next-blue {
+  background-image: url("../assets/blueshadow.png");
+  background-size: 75px;
+}
+
+.col.red {
+  background-image: url("../assets/rglow.png");
+  background-position: center;
+  background-size: 75px;
+}
+
+.col.blue {
+  background-image: url("../assets/bglow.png");
+  background-position: center;
+  background-size: 75px;
+}
